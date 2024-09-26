@@ -21,7 +21,7 @@ public class Damage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             playerHealth.health -= damage;
         }
